@@ -15,7 +15,7 @@ public class jdbcConn {
         Properties prop = new Properties();
 
         //加载druid对象
-        prop.load(new FileInputStream("D:/Test/src/druid.properties"));
+        prop.load(new FileInputStream("D:/Test/EEEEEEEuuu/src/druid.properties"));
 
         //获取连接池对象
         DataSource dataSource = DruidDataSourceFactory.createDataSource(prop);//传入properties对象  资源对象

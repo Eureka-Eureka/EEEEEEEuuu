@@ -1,14 +1,13 @@
 package com.WorkerSystem.controllers.AdminControllers;
 
 import com.WorkerSystem.Main;
-import com.WorkerSystem.controllers.del_ensurer_controller;
+import com.WorkerSystem.util.ConfirmDelete;
 import com.WorkerSystem.dao.AdminDAO;
 import com.WorkerSystem.dao.impl.AdminDAOimpl;
 import com.WorkerSystem.pojo.Staff;
 import com.WorkerSystem.util.errorSetter;
 import javafx.collections.FXCollections;
 import javafx.collections.ObservableList;
-import javafx.event.ActionEvent;
 import javafx.fxml.FXML;
 import javafx.scene.control.*;
 import javafx.scene.control.cell.PropertyValueFactory;
@@ -97,14 +96,8 @@ public class AdminManageSystem_controller {
         Staff staff = tableview.getSelectionModel().getSelectedItem();
 
         if(staff != null){
-            Main.addView("views/del_ensurer.fxml");
-            boolean info = del_ensurer_controller.getInfo();
-            if(info==true){
-                AdminDAO adminDAO = new AdminDAOimpl();
-                String id = staff.getID();
-                adminDAO.DelStaff_inf(id);
-            }
-
+            ConfirmDelete.setDel_ID(staff.getID());
+            ConfirmDelete.confirmDelete();
         }else if(staff == null){
             errorSetter.SetError("未选中对应行！！");
             return;
