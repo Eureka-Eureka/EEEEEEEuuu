@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.text.*?>
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane prefHeight="652.0" prefWidth="1038.0" style="-fx-background-color: #2F4F4F;" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.WorkerSystem.controllers.AdminControllers.AdminManageSystem_controller">
+   <children>
+      <TableView fx:id="tableview" layoutX="89.0" layoutY="119.0" prefHeight="450.0" prefWidth="873.0">
+        <columns>
+          <TableColumn fx:id="ID" prefWidth="76.0" text="职工号" />
+            <TableColumn fx:id="name" prefWidth="103.0" text="姓名" />
+            <TableColumn fx:id="sex" prefWidth="54.0" text="性别" />
+            <TableColumn fx:id="age" prefWidth="58.0" text="年龄" />
+            <TableColumn fx:id="academic" prefWidth="92.0" text="学历" />
+            <TableColumn fx:id="address" prefWidth="86.0" text="住址" />
+            <TableColumn fx:id="staff_baseSalary" prefWidth="127.0" text="工资" />
+            <TableColumn fx:id="tel" prefWidth="173.0" text="电话" />
+        </columns>
+      </TableView>
+      <Label alignment="CENTER" layoutX="333.0" layoutY="53.0" prefHeight="47.0" prefWidth="373.0" text="员工管理系统" textFill="#dda4a4">
+         <font>
+            <Font size="36.0" />
+         </font>
+      </Label>
+      <Button layoutX="32.0" layoutY="592.0" mnemonicParsing="false" onAction="#showAddView" prefHeight="36.0" prefWidth="121.0" style="-fx-background-radius: 10;" text="信息录入" />
+      <Button layoutX="199.0" layoutY="592.0" mnemonicParsing="false" onAction="#showUpdateView" prefHeight="36.0" prefWidth="121.0" style="-fx-background-radius: 10;" text="信息修改" />
+      <Button layoutX="369.0" layoutY="592.0" mnemonicParsing="false" onAction="#delinfo" prefHeight="36.0" prefWidth="121.0" style="-fx-background-radius: 10;" text="信息删除" />
+      <Button layoutX="540.0" layoutY="592.0" mnemonicParsing="false" onAction="#showSalaryAddView" prefHeight="36.0" prefWidth="121.0" style="-fx-background-radius: 10;" text="工资录入" />
+      <Button alignment="CENTER" layoutX="917.0" layoutY="620.0" mnemonicParsing="false" onAction="#Back" prefHeight="36.0" prefWidth="121.0" text="返回" />
+      <MenuButton layoutX="-3.0" layoutY="-1.0" mnemonicParsing="false" text="查询">
+         <items>
+            <Menu mnemonicParsing="false" text="工资">
+               <items>
+                  <MenuItem mnemonicParsing="false" text="&lt;">
+                     <graphic>
+                        <TextField fx:id="Salary_topRange" alignment="CENTER_RIGHT" prefHeight="36.0" prefWidth="195.0" />
+                     </graphic>
+                  </MenuItem>
+                  <MenuItem mnemonicParsing="false" text="&gt;">
+                     <graphic>
+                        <TextField fx:id="Salary_lowRange" alignment="CENTER_RIGHT" prefHeight="36.0" prefWidth="195.0" />
+                     </graphic>
+                  </MenuItem>
+               </items>
+            </Menu>
+            <SeparatorMenuItem mnemonicParsing="false" />
+            <Menu mnemonicParsing="false" text="学历">
+               <items>
+                  <MenuItem mnemonicParsing="false" text="-">
+                     <graphic>
+                        <TextField fx:id="acadeInfo" prefHeight="36.0" prefWidth="99.0" />
+                     </graphic>
+                  </MenuItem>
+               </items>
+            </Menu>
+            <SeparatorMenuItem mnemonicParsing="false" />
+            <Menu mnemonicParsing="false" text="年龄">
+               <items>
+                  <MenuItem mnemonicParsing="false" text="&lt;">
+                     <graphic>
+                        <TextField fx:id="Age_topRange" prefHeight="36.0" prefWidth="77.0" />
+                     </graphic>
+                  </MenuItem>
+                  <MenuItem mnemonicParsing="false" text="&gt;">
+                     <graphic>
+                        <TextField fx:id="Age_lowRange" prefHeight="36.0" prefWidth="77.0" />
+                     </graphic>
+                  </MenuItem>
+               </items>
+            </Menu>
+            <SeparatorMenuItem mnemonicParsing="false" />
+            <Menu mnemonicParsing="false" text="职工号">
+               <items>
+                  <MenuItem mnemonicParsing="false" text="-">
+                     <graphic>
+                        <TextField fx:id="IDinfo" prefHeight="36.0" prefWidth="99.0" />
+                     </graphic>
+                  </MenuItem>
+               </items>
+            </Menu>
+            <MenuItem mnemonicParsing="false">
+               <graphic>
+                  <Button mnemonicParsing="false" onAction="#queryInfoByCondition" text="确定" />
+               </graphic>
+            </MenuItem>
+         </items>
+      </MenuButton>
+      <MenuButton layoutX="89.0" layoutY="-1.0" mnemonicParsing="false" text="排序">
+         <items>
+            <Menu mnemonicParsing="false" text="年龄">
+               <items>
+                  <CheckMenuItem fx:id="Age_asc" mnemonicParsing="false" text="升" />
+                  <CheckMenuItem fx:id="Age_desc" mnemonicParsing="false" text="降" />
+               </items>
+            </Menu>
+            <SeparatorMenuItem mnemonicParsing="false" />
+            <Menu mnemonicParsing="false" text="工资">
+               <items>
+                  <CheckMenuItem fx:id="Salary_asc" mnemonicParsing="false" text="升" />
+                  <CheckMenuItem fx:id="Salary_desc" mnemonicParsing="false" text="降" />
+               </items>
+            </Menu>
+            <MenuItem mnemonicParsing="false">
+               <graphic>
+                  <Button mnemonicParsing="false" onAction="#orderInfoByCondition" text="确定" />
+               </graphic>
+            </MenuItem>
+         </items>
+      </MenuButton>
+   </children>
+</AnchorPane>

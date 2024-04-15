@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.text.*?>
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane prefHeight="652.0" prefWidth="1038.0" style="-fx-background-color: #1E90FF;" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.WorkerSystem.controllers.StaffControllers.Staff_salaryInfo_controller">
+   <children>
+      <AnchorPane layoutY="45.0" prefHeight="614.0" prefWidth="1038.0" style="-fx-background-color: #FFFAFA;">
+         <children>
+            <Label alignment="CENTER" layoutX="419.0" prefHeight="60.0" prefWidth="200.0" text="工资详情表" textFill="#eb0a0a">
+               <font>
+                  <Font size="36.0" />
+               </font>
+            </Label>
+            <Button alignment="CENTER" layoutX="899.0" layoutY="561.0" mnemonicParsing="false" prefHeight="53.0" prefWidth="139.0" text="返回" textFill="#2f2e2e" onAction="#Back">
+               <font>
+                  <Font size="24.0" />
+               </font></Button>
+            <ScrollPane layoutY="61.0" prefHeight="446.0" prefWidth="1038.0">
+               <content>
+                  <TableView fx:id="tableview" prefHeight="428.0" prefWidth="1227.0">
+                    <columns>
+                      <TableColumn fx:id="shouldPay" prefWidth="126.0" text="应发工资" />
+                      <TableColumn fx:id="baseSalary" prefWidth="109.0" text="基本工资" />
+                        <TableColumn fx:id="benefit" prefWidth="96.0" text="津贴" />
+                        <TableColumn fx:id="livingAllowance" prefWidth="96.0" text="生活补贴" />
+                        <TableColumn fx:id="totalCut" prefWidth="98.0" text="合计扣款" />
+                        <TableColumn fx:id="telBill" prefWidth="90.0" text="电话费" />
+                        <TableColumn fx:id="utiBill" prefWidth="84.0" text="水电费" />
+                        <TableColumn fx:id="houseRent" prefWidth="86.0" text="房租" />
+                        <TableColumn fx:id="incomeTax" prefWidth="83.0" text="所得税" />
+                        <TableColumn fx:id="sanFee" prefWidth="89.0" text="卫生费" />
+                        <TableColumn fx:id="accumFunds" prefWidth="81.0" text="公积金" />
+                        <TableColumn fx:id="netPay" prefWidth="95.0" text="实发工资" />
+                        <TableColumn fx:id="date" prefWidth="93.0" text="日期" />
+                    </columns>
+                  </TableView>
+               </content>
+            </ScrollPane>
+         </children>
+      </AnchorPane>
+   </children>
+</AnchorPane>

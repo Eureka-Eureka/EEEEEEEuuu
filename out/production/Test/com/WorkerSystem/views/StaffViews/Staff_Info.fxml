@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.text.*?>
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane prefHeight="652.0" prefWidth="1038.0" style="-fx-background-color: #1E90FF;" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.WorkerSystem.controllers.StaffControllers.StaffInfo_controller">
+   <children>
+      <AnchorPane layoutY="48.0" prefHeight="614.0" prefWidth="1038.0" style="-fx-background-color: #FFFAFA; -fx-border-color: #A9A9A9;">
+         <children>
+            <Button layoutX="91.0" layoutY="535.0" mnemonicParsing="false" prefHeight="53.0" prefWidth="139.0" style="-fx-background-radius: 10;" text="工资详情" onAction="#salaryInfo"/>
+            <Button layoutX="306.0" layoutY="535.0" mnemonicParsing="false" prefHeight="53.0" prefWidth="139.0" style="-fx-background-radius: 10;" text="修改密码" onAction="#updatePassword"/>
+            <Button layoutX="900.0" layoutY="561.0" mnemonicParsing="false" prefHeight="53.0" prefWidth="139.0" text="返回" onAction="#Back"/>
+            <Label alignment="CENTER" layoutX="60.0" layoutY="150.0" prefHeight="66.0" prefWidth="200.0" style="-fx-border-style: solid; -fx-border-color: #A9A9A9;" text="职工号" />
+            <Label layoutX="60.0" layoutY="120.0" prefHeight="30.0" prefWidth="920.0" style="-fx-background-color: #DCDCDC;" />
+            <Label alignment="CENTER" layoutX="521.0" layoutY="151.0" prefHeight="66.0" prefWidth="200.0" style="-fx-border-style: solid; -fx-border-color: #A9A9A9;" text="姓名" />
+            <Label layoutX="60.0" layoutY="217.0" prefHeight="30.0" prefWidth="920.0" style="-fx-background-color: #DCDCDC;" />
+            <Label alignment="CENTER" layoutX="60.0" layoutY="248.0" prefHeight="66.0" prefWidth="200.0" style="-fx-border-style: solid; -fx-border-color: #A9A9A9;" text="性别" />
+            <Label alignment="CENTER" layoutX="520.0" layoutY="247.0" prefHeight="67.0" prefWidth="200.0" style="-fx-border-style: solid; -fx-border-color: #A9A9A9;" text="年龄" />
+            <Label layoutX="60.0" layoutY="408.0" prefHeight="30.0" prefWidth="920.0" style="-fx-background-color: #DCDCDC;" />
+            <Label alignment="CENTER" layoutX="60.0" layoutY="438.0" prefHeight="67.0" prefWidth="119.0" style="-fx-border-style: solid; -fx-border-color: #A9A9A9;" text="基本工资" />
+            <Label alignment="CENTER" layoutX="520.0" layoutY="344.0" prefHeight="66.0" prefWidth="200.0" style="-fx-border-style: solid; -fx-border-color: #A9A9A9;" text="电话号码" />
+            <Label layoutX="60.0" layoutY="314.0" prefHeight="30.0" prefWidth="920.0" style="-fx-background-color: #DCDCDC;" />
+            <Label alignment="CENTER" layoutX="60.0" layoutY="345.0" prefHeight="65.0" prefWidth="200.0" style="-fx-border-style: solid; -fx-border-color: #A9A9A9;" text="学历" />
+            <Label alignment="CENTER" layoutX="352.0" layoutY="439.0" prefHeight="66.0" prefWidth="165.0" style="-fx-border-style: solid; -fx-border-color: #A9A9A9;" text="地址" />
+            <Label fx:id="ID" alignment="CENTER" layoutX="260.0" layoutY="151.0" prefHeight="66.0" prefWidth="260.0" style="-fx-border-color: #A9A9A9; -fx-border-style: solid;" />
+            <Label fx:id="name" alignment="CENTER" layoutX="721.0" layoutY="151.0" prefHeight="66.0" prefWidth="260.0" style="-fx-border-style: solid; -fx-border-color: #A9A9A9;" />
+            <Label fx:id="sex" alignment="CENTER" layoutX="260.0" layoutY="248.0" prefHeight="66.0" prefWidth="260.0" style="-fx-border-style: solid; -fx-border-color: #A9A9A9;" />
+            <Label fx:id="age" alignment="CENTER" layoutX="720.0" layoutY="248.0" prefHeight="66.0" prefWidth="260.0" style="-fx-border-style: solid; -fx-border-color: #A9A9A9;" />
+            <Label fx:id="academic" alignment="CENTER" layoutX="260.0" layoutY="344.0" prefHeight="66.0" prefWidth="260.0" style="-fx-border-style: solid; -fx-border-color: #A9A9A9;" />
+            <Label fx:id="tel" alignment="CENTER" layoutX="720.0" layoutY="345.0" prefHeight="66.0" prefWidth="260.0" style="-fx-border-style: solid; -fx-border-color: #A9A9A9;" />
+            <Label fx:id="baseSalary" alignment="CENTER" layoutX="176.0" layoutY="439.0" prefHeight="66.0" prefWidth="176.0" style="-fx-border-style: solid; -fx-border-color: #A9A9A9;" />
+            <Label fx:id="address" alignment="CENTER" layoutX="514.0" layoutY="439.0" prefHeight="66.0" prefWidth="466.0" style="-fx-border-style: solid; -fx-border-color: #A9A9A9;" />
+            <Label alignment="CENTER" layoutX="371.0" layoutY="35.0" prefHeight="50.0" prefWidth="300.0" text="个人职工信息表" textFill="#e10a0a">
+               <font>
+                  <Font size="36.0" />
+               </font>
+            </Label>
+         </children>
+      </AnchorPane>
+   </children>
+</AnchorPane>

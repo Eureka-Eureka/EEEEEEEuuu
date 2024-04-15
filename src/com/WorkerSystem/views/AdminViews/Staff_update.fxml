@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.image.*?>
+<?import javafx.scene.text.*?>
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane prefHeight="652.0" prefWidth="1038.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.WorkerSystem.controllers.AdminControllers.StaffUpdate_controller">
+
+    <children>
+      <AnchorPane layoutX="500.0" prefHeight="652.0" prefWidth="538.0" style="-fx-background-color: #FFFAF0;">
+         <children>
+            <Label alignment="CENTER" layoutX="144.0" layoutY="31.0" prefHeight="50.0" prefWidth="250.0" text="信 息 修 改" textFill="#34cd74">
+               <font>
+                  <Font size="36.0" />
+               </font>
+            </Label>
+              <Label alignment="CENTER" layoutX="125.0" layoutY="107.0" prefHeight="30.0" prefWidth="50.0" text="工号" textFill="#34cd74">
+               <font>
+                  <Font size="18.0" />
+               </font>
+            </Label>
+              <TextField fx:id="ID" editable="false" layoutX="207.0" layoutY="107.0" style="-fx-background-radius: 10; -fx-background-color: #C1FFC1;" />
+              <Label alignment="CENTER" layoutX="125.0" layoutY="165.0" prefHeight="30.0" prefWidth="50.0" text="姓名" textFill="#34cd74">
+               <font>
+                  <Font size="18.0" />
+               </font>
+            </Label>
+              <TextField fx:id="name" layoutX="208.0" layoutY="165.0" prefHeight="30.0" prefWidth="201.0" style="-fx-background-radius: 10; -fx-background-color: #C1FFC1;" />
+              <Label alignment="CENTER" layoutX="125.0" layoutY="227.0" prefHeight="30.0" prefWidth="50.0" text="性别" textFill="#34cd74">
+               <font>
+                  <Font size="18.0" />
+               </font>
+            </Label>
+              <ChoiceBox fx:id="sex" layoutX="207.0" layoutY="227.0" prefWidth="150.0" style="-fx-background-radius: 10; -fx-background-color: #C1FFC1;" />
+              <Label alignment="CENTER" layoutX="125.0" layoutY="290.0" prefHeight="30.0" prefWidth="50.0" text="年龄" textFill="#34cd74">
+               <font>
+                  <Font size="18.0" />
+               </font>
+            </Label>
+              <TextField fx:id="age" layoutX="208.0" layoutY="290.0" prefHeight="30.0" prefWidth="79.0" style="-fx-background-radius: 10; -fx-background-color: #C1FFC1;" />
+              <Label alignment="CENTER" layoutX="125.0" layoutY="344.0" prefHeight="30.0" prefWidth="50.0" text="学历" textFill="#34cd74">
+               <font>
+                  <Font size="18.0" />
+               </font>
+            </Label>
+              <TextField fx:id="academic" layoutX="208.0" layoutY="344.0" style="-fx-background-radius: 10; -fx-background-color: #C1FFC1;" />
+              <Label alignment="CENTER" layoutX="114.0" layoutY="405.0" prefHeight="30.0" prefWidth="73.0" text="电话号码" textFill="#34cd74">
+               <font>
+                  <Font size="18.0" />
+               </font>
+            </Label>
+              <TextField fx:id="tel" layoutX="207.0" layoutY="405.0" style="-fx-background-radius: 10; -fx-background-color: #C1FFC1;" />
+              <Label alignment="CENTER" layoutX="126.0" layoutY="462.0" prefHeight="30.0" prefWidth="50.0" text="地址" textFill="#34cd74">
+               <font>
+                  <Font size="18.0" />
+               </font>
+            </Label>
+              <TextField fx:id="address" layoutX="207.0" layoutY="462.0" style="-fx-background-radius: 10; -fx-background-color: #C1FFC1;" />
+              <Label alignment="CENTER" layoutX="115.0" layoutY="518.0" prefHeight="30.0" prefWidth="73.0" text="基本工资" textFill="#34cd74">
+               <font>
+                  <Font size="18.0" />
+               </font>
+            </Label>
+              <TextField fx:id="staff_baseSalary" layoutX="208.0" layoutY="518.0" style="-fx-background-radius: 10; -fx-background-color: #C1FFC1;" />
+              <Button layoutX="206.0" layoutY="578.0" mnemonicParsing="false" onAction="#Staff_update" prefHeight="36.0" prefWidth="162.0" style="-fx-background-color: #FFFF00; -fx-background-radius: 10;" text="提       交">
+               <font>
+                  <Font size="18.0" />
+               </font>
+            </Button>
+         </children>
+      </AnchorPane>
+      <AnchorPane prefHeight="652.0" prefWidth="500.0" />
+      <ImageView fitHeight="652.0" fitWidth="500.0" opacity="0.73" pickOnBounds="true">
+         <image>
+            <Image url="@../../../../Properties/bgc_4.jpg" />
+         </image>
+      </ImageView>
+    </children>
+</AnchorPane>

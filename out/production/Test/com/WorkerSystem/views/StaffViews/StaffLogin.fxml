@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.text.*?>
+<?import javafx.scene.image.*?>
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.WorkerSystem.controllers.StaffControllers.StaffLogin_controller">
+   <children>
+      <ImageView fitHeight="400.0" fitWidth="600.0" opacity="0.78" pickOnBounds="true">
+         <image>
+            <Image url="@../../../../Properties/bgc_1.jpg" />
+         </image>
+      </ImageView>
+      <Label layoutX="192.0" layoutY="55.0" text="职工登录界面" textAlignment="CENTER" textFill="#0b98e0">
+         <font>
+            <Font size="36.0" />
+         </font>
+      </Label>
+      <Label alignment="CENTER" layoutX="142.0" layoutY="120.0" prefHeight="54.0" prefWidth="72.0" text="账号" textFill="#2c2a2a">
+         <font>
+            <Font size="24.0" />
+         </font>
+      </Label>
+      <TextField fx:id="account"  layoutX="214.0" layoutY="132.0" opacity="0.8" style="-fx-background-radius: 10;" />
+      <Label alignment="CENTER" layoutX="142.0" layoutY="200.0" prefHeight="54.0" prefWidth="72.0" text="密码" textFill="#2c2a2a">
+         <font>
+            <Font size="24.0" />
+         </font></Label>
+      <PasswordField fx:id="password" layoutX="214.0" layoutY="212.0" opacity="0.8" style="-fx-background-radius: 10;" />
+      <Button alignment="CENTER" layoutX="128.0" layoutY="309.0" mnemonicParsing="false" onAction="#StaffLogin" prefHeight="50.0" prefWidth="100.0" style="-fx-background-color: #FFF8DC; -fx-background-radius: 10;" text="登录">
+         <font>
+            <Font size="24.0" />
+         </font>
+      </Button>
+      <Label layoutX="211.0" layoutY="254.0" prefHeight="30.0" prefWidth="202.0" textFill="#ee0808">
+         <font>
+            <Font size="18.0" />
+         </font></Label>
+      <Button alignment="CENTER" layoutX="358.0" layoutY="309.0" mnemonicParsing="false" onAction="#Back" prefHeight="50.0" prefWidth="100.0" style="-fx-background-color: #FFF8DC; -fx-background-radius: 10;" text="返回" >
+         <font>
+            <Font size="24.0" />
+         </font>
+      </Button>
+   </children>
+</AnchorPane>
