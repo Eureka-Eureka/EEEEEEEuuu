@@ -49,6 +49,7 @@ public class StaffAdd_controller {
     @FXML
     public void Staff_add(ActionEvent event) throws Exception {
 
+
         //判断工号唯一性 和 工号格式
         int flag = Number.isUnique(ID.getText());
 
@@ -59,6 +60,13 @@ public class StaffAdd_controller {
 
         if(flag == 2){
             errorSetter.SetError("职工号格式错误！");
+            return;
+        }
+
+        if(ID.getText()==null||name.getText()==null||sex.getValue()==null||
+                age.getText()==null||academic.getText()==null||tel.getText()==null||address.getText()==null||
+                staff_baseSalary.getText()==null){
+            errorSetter.SetError("请完善信息后提交！！");
             return;
         }
         //获取输入数据
