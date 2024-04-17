@@ -3,6 +3,7 @@ package com.WorkerSystem.dao.impl;
 import com.WorkerSystem.dao.AdminDAO;
 import com.WorkerSystem.pojo.Admin;
 import com.WorkerSystem.pojo.Staff;
+import com.WorkerSystem.pojo.Staff_Account;
 import com.WorkerSystem.pojo.Staff_salary;
 import com.WorkerSystem.util.jdbcConn;
 
@@ -179,5 +180,18 @@ public class AdminDAOimpl implements AdminDAO {
 
         pstm.execute();
     }
+
+    @Override
+    public void AddStaff_account(String staff_ID) throws Exception {
+        Connection conn = jdbcConn.getConnection();
+        String sql = "insert into staff_account values(?,?)";
+        PreparedStatement pstm = conn.prepareStatement(sql);
+
+        pstm.setString(1,staff_ID);
+        pstm.setString(2,"123456");
+
+        pstm.execute();
+    }
+
 
 }

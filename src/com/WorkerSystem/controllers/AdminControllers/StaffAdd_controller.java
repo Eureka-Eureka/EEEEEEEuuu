@@ -68,6 +68,7 @@ public class StaffAdd_controller {
                 Integer.parseInt(age.getText()), academic.getText(),tel.getText(),address.getText(),
                 Integer.parseInt(staff_baseSalary.getText()));
 
+        adminDAO.AddStaff_account(ID.getText());
         //添加结束 关闭当前页面 转发至录入界面
         Stage stage = (Stage) ((Node) event.getSource()).getScene().getWindow();
         stage.close();

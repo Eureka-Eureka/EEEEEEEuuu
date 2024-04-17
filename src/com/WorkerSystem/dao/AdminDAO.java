@@ -33,4 +33,7 @@ public interface AdminDAO {
 
     //录入员工工资
     void AddStaff_salary(Staff_salary salary) throws Exception;
+
+    //录入员工账户
+    void AddStaff_account(String Staff_ID) throws Exception;
 }
